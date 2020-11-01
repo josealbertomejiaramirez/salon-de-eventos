@@ -1,5 +1,5 @@
 :root {
-    --colorTextos: #ff79d267;
+    --colorTextos: #00000067;
 }
 
 
@@ -13,7 +13,7 @@
 
 body {
     font-family: 'Roboto';
-    background-image: url(img/PORTADA.jpg);
+    background-color: #181818;
     height: 800px;
     /*display: flex;*/
     justify-content: center;
@@ -51,14 +51,15 @@ form{
     margin: auto;
 }
 
+
 form .grupo{
     position: relative;
     margin: 45px ;
 }
 
-input{
+input, textarea{
     background: none;
-    color: #ff79d2;
+    color: #000000;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
@@ -103,7 +104,7 @@ input:valid~label{
     width: 0%;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to right, #ff79d2, #ffffff);
+    background: linear-gradient(to right, #000000, #ffffff);
     transition: 0.3s ease width;
     left: 0;
 }
@@ -123,7 +124,7 @@ input:focus~.barra::before{
 
 button{
     font-family: 'roboto';
-    background: #ff79d2;
+    background: #777777;
     border: none;
     display: block;
     width: 50%;
@@ -180,13 +181,8 @@ button{
 
 header{
    width: 100%;
-   height: 270px;
-   background: #280026;  
-   /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, hsla(315, 100%, 61%, 0.521), hsla(0, 0%, 28%, 0.295)), url(../img/BACKGROUND.jpg); 
-   /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, hsla(315, 100%, 61%, 0.521), hsla(0, 0%, 24%, 0.295)), url(../img/BACKGROUND.jpg); 
-   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   height: 250px;
+   background: #000000;  
    background-size: cover;
    background-attachment: fixed;
    position: relative;
@@ -200,7 +196,8 @@ nav{
 
 nav > a{
     color:#fff;
-    font-weight: 430;
+    font-weight: 330;
+    font-size: 15px;
     text-decoration: none;
     margin-right: 10px;
     
@@ -228,8 +225,8 @@ nav > a:hover{
 
 
 .textoscabecera{
-    color:rgb(0, 0, 0);
-    font-weight: 430;
+    color:rgb(255, 233, 36);
+    font-weight: 330;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -300,7 +297,7 @@ header .textos-header{
 .contenido-textos p{
     margin-bottom: 10px;
     padding: 0px 0px 50px 1px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 500;
     text-align: justify;
 }
